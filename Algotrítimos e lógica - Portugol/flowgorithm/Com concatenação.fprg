@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cnogu"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-10-10 06:00:16 "/>
+        <attribute name="created" value="Y25vZ3U7TEFQVE9QLTA2NkpLOEtPOzIwMjEtMTAtMTA7IjA0OjEyOjA1ICI7MjczOA=="/>
+        <attribute name="edited" value="Y25vZ3U7TEFQVE9QLTA2NkpLOEtPOzIwMjEtMTAtMTA7IjA2OjAwOjE2ICI7MTsyODQ3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="janeiro, fevereiro, marco, abril, total, media, acrescimo" type="Real" array="False" size=""/>
+            <input variable="janeiro"/>
+            <input variable="fevereiro"/>
+            <input variable="marco"/>
+            <input variable="abril"/>
+            <assign variable="total" expression="janeiro+fevereiro+marco+abril"/>
+            <assign variable="media" expression="total/4"/>
+            <if expression="media &gt;= 5000">
+                <then>
+                    <output expression="&quot;Seu total de vendas no per&#237;odo &#233; de R$ &quot; &amp; total" newline="True"/>
+                    <assign variable="acrescimo" expression="total*0.1"/>
+                    <output expression="total+acrescimo" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Seu total de vendas no per&#237;odo &#233; de R$ &quot; &amp; total" newline="True"/>
+                    <assign variable="acrescimo" expression="total*0.03"/>
+                    <output expression="total+acrescimo" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
