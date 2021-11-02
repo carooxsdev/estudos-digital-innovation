@@ -10,9 +10,11 @@ Projetado como um modelo de layout unidimensional e como um método que pode ofe
 
 
 
-![Flex Container image!](C:\Users\cnogu\OneDrive\Documentos\cursos\Bootcamp Impulso-DIO\estudos-digital-innovation\Posicionando elementos com Flexbox em CSS\flex1.png)
+![Flex Container image!](C:\Users\cnogu\OneDrive\Documentos\cursos\Bootcamp Impulso-DIO\estudos-digital-innovation\Posicionando elementos com Flexbox em CSS\assets\flex1.png)
 
 
+
+#### 
 
 Esta inicialização pode ser feita em qualquer tipo de tag.
 
@@ -49,4 +51,42 @@ São os elementos filhos diretor do flex Container. E Também podem se tornar Fl
 
 ### display: flex;
 
-Torna a
+Esta propriedade inicia a funcionalidade do Display flex no CSS.
+
+Sua orientação é Horizontal por padrão, mas pode ser modificada através do comando  **flex-direction**
+
+
+
+### Flex-direction
+
+É a propriedade que estabelece o eixo principal do container, definindo assim, a direção que os flex items são colocados no flex container.
+
+![Flex direction image!](C:\Users\cnogu\OneDrive\Documentos\cursos\Bootcamp Impulso-DIO\estudos-digital-innovation\Posicionando elementos com Flexbox em CSS\assets\flex direction.png)
+
+#### Eixos
+
+- row (padrão) : à direção do texto, esquerda para direita;
+- row-reverse: Sentido oposto à direção do texto;
+- column: ordenação de cima para baixo, em coluna única;
+- column-reverse: ordenação inversa, de baixo para cima;
+
+
+
+### Flex-wrap
+
+Propriedade que define se os itens devem ou não quebrar a linha. 
+
+Por padrão, eles não quebram linhas, isso faz com que os flex itens sejam compactados além do limite do conteúdo.
+
+
+
+![Flex direction image!](C:\Users\cnogu\OneDrive\Documentos\cursos\Bootcamp Impulso-DIO\estudos-digital-innovation\Posicionando elementos com Flexbox em CSS\assets\flex-wrap.png)
+
+
+
+- nowrap: é o padrão, não permite a quebra de linha.
+- wrap: permite a quebra de linha assim que um dos flex itens não puder mais ser compactado.
+- wrap-reverse: permite a quebra de linha assim que um dos flex itens não puder mais ser compactado, porém na direção contrária da linha, acima.
+
+
+
