@@ -8,7 +8,9 @@
     <style>
       .flex-container {
         display: flex;
-        border: 1px solid black;
+        border: 2px solid rgb(39, 38, 38);
+        border-radius: 0.3rem;
+        box-shadow: 5px 5px 10px rgb(63, 62, 62);
         max-width: 500px;
         margin-bottom: 10px;
       }
@@ -31,6 +33,11 @@
       .row-reverse-wrap {
         flex-flow: row-reverse wrap;
       }
+
+      .row-reverse-wrap-reverse {
+        flex-flow: row-reverse wrap-reverse;
+      }
+
       .item {
         background-color: blueviolet;
         margin: 5px;
@@ -39,6 +46,7 @@
         width: 100px;
         height: 50px;
         line-height: 50px;
+        border-radius: 0.3rem;
       }
     </style>
   </head>
@@ -93,16 +101,18 @@
       <div class="item">4</div>
       <div class="item">5</div>
       <div class="item">6</div>
+      <div class="item">7</div>
     </div>
 
     <h1>row-reverse wrap-reverse</h1>
-    <div class="flex-container row-reverse-wrap">
+    <div class="flex-container row-reverse-wrap-reverse">
       <div class="item">1</div>
       <div class="item">2</div>
       <div class="item">3</div>
       <div class="item">4</div>
       <div class="item">5</div>
-      <div class="item">5</div>
+      <div class="item">6</div>
+      <div class="item">7</div>
     </div>
   </body>
 </html>
