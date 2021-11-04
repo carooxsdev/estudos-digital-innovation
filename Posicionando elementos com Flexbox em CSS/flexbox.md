@@ -96,5 +96,17 @@ Por padrão, eles não quebram linhas, isso faz com que os flex itens sejam comp
 
 
 
+###  Justify content
 
+Essa propriedade vai se encarregar de alinhar os itens dentro do container de acordo com a direção pretendida e tratar da distribuição de espaçamento entre eles. 
+
+**OBS:** Caso seus itens estejam ocupando 100% de todo o container, ela não se aplica.
+
+
+
+- flex-start: início do container.
+- flex-end: final do container.
+- center: ao centro do container.
+- space-between: cria um espaçamento igual entre os elementos.
+- space-around: os espaçamentos do meio são duas vezes maiores que o inicial e final
 
