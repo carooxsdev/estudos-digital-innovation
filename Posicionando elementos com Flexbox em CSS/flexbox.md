@@ -141,9 +141,22 @@ Precisamos que:
 
 - center: alinhamento dos itens ao centro
 - strech: é o padrão e os flex itens crescem igualmente
-- Flex-Start
+- Flex-Start: alinhamento sempre ao início do container
+- flex-end: alinhamento dos itens ao final do container
+- space-between: cria um espaçamento igual entre os elementos
+- space-around: os espaçamentos do meio são duas vezes maiores que o inicial e final
 
 
 
 
+
+
+
+## Flex items
+
+### flex-grow
+
+Define a proporcionalidade de crescimento dos itens, respeitando o tamanho de seus conteúdos internos. 
+
+**OBS:** não irá funcionar caso tenhamos adicionado justfy-content ao nosso flex container
 

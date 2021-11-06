@@ -7,38 +7,78 @@
     <title>Fundamentos - align content</title>
 
     <style>
+      *,
+      *:after,
+      *:before {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+      }
+      body {
+        font-size: 100%;
+        list-style-type: none;
+      }
       .container {
-        height: 400%;
+        height: 350%;
         max-width: 300px;
-        margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
-        border: 3px solid rgb(63, 62, 62);
+        border: 1px solid rgb(63, 62, 62);
       }
 
       .item {
         background-color: orangered;
         padding: 0 5px;
+
+        margin: 5px;
         flex: 1;
         text-align: center;
         color: white;
       }
+      .stretch {
+        align-content: stretch;
+      }
+
+      .center {
+        align-content: flex-end;
+      }
+      .flex-end {
+        align-content: flex-end;
+      }
+
+      .flex-start {
+        align-content: flex-start;
+      }
     </style>
   </head>
   <body>
-    <div class="container">
+    <p>stretch</p>
+    <div class="container stretch">
+      <div class="item">Lorem Ipsum is therefore always free from</div>
+      <div class="item">Lorem Ipsum is therefore</div>
+      <div class="item">Lorem Ipsum is therefore always free</div>
       <div class="item">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non animi amet
+        Lorem Ipsum is therefore always free from repetition, injected humour,
+        or non-characteristic words etc.
       </div>
-      <div class="item">Lorem ipsum dolor sit</div>
-      <div class="item">Lorem ipsum dolor sit amet consectetur</div>
+      <div class="item">Lorem Ipsum is therefore</div>
+      <div class="item">Lorem Ipsum is therefore</div>
+      <div class="item">Lorem Ipsum is therefore</div>
+    </div>
+
+    <p>center</p>
+    <div class="container flex-end">
+      <div class="item">Lorem Ipsum is therefore always free from</div>
+      <div class="item">Lorem Ipsum is therefore</div>
+      <div class="item">Lorem Ipsum is therefore always free</div>
       <div class="item">
-        cumque iure expedita eaque at ipsam, exercitationem voluptates
-        voluptatum libero aliquam blanditiis aspernatur temporibus officiis?
+        Lorem Ipsum is therefore always repetition, injected humour, or
+        non-characteristic
       </div>
-      <div class="item">Lorem ipsum dolor sit amet consectetur</div>
-      <div class="item">Lorem ipsum dolor sit amet consectetur</div>
-      <div class="item">Lorem ipsum dolor sit amet consectetur</div>
+      <div class="item">Lorem Ipsum is therefore</div>
+      <div class="item">Lorem Ipsum is therefore</div>
+      <div class="item">Lorem Ipsum is therefore</div>
     </div>
   </body>
 </html>
