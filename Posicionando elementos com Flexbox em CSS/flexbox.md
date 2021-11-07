@@ -10,7 +10,7 @@ Projetado como um modelo de layout unidimensional e como um método que pode ofe
 
 
 
-![Flex Container image!](C:\Users\cnogu\OneDrive\Documentos\cursos\Bootcamp Impulso-DIO\estudos-digital-innovation\Posicionando elementos com Flexbox em CSS\assets\flex1.png)
+![Flex Container image!](C:\Users\cnogu\OneDrive\Documentos\cursos\Bootcamp Impulso-DIO\estudos-digital-innovation\Posicionando elementos com Flexbox em CSS\assets\flex1.png) 
 
 
 
